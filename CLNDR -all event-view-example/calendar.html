@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calendar by using clndr.js</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/clndr.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="padding-bottom: 40px;">
+      <p>
+        <strong>clndr.adjacent</strong> Test showAdjacentMonths and
+        adjacentDaysChangeMonth.<br />Edges of other months should be
+        visible and clicking them should switch the month.
+      </p>
+      <div id="adjacent" class="cal1"></div>
+
+      <p>
+        <strong>clndr.passInEvents</strong> Pass in events.
+      </p>
+      <div id="pass-in-events" class="cal1"></div>
+
+      <p>
+        <strong>clndr.multiday</strong> Show multi-day events (12th - 17th,
+        24th - 27th). Logs in the console.
+      </p>
+      <div id="multiday" class="cal1"></div>
+
+      <p>
+        <strong>clndr.multidayMixed</strong> Show multi-day events (12th -
+        17th, 24th - 27th), plus a single day event (19th). Logs in the
+        console.
+      </p>
+      <div id="multiday-mixed" class="cal1"></div>
+
+      <p>
+        <strong>clndr.multidayLong</strong> Show multi-day events (3 months
+        ago on the 12th - 17th of this month, 24th of this month - 4 months
+        from now on the 27th). Logs in the console.
+      </p>
+      <div id="multiday-long" class="cal1"></div>
+
+      <p>
+        <strong>clndr.constraints</strong> Test start and end constraints.
+        (the 4th of this month to the 12th of next month). Logs in the console.
+      </p>
+      <div id="constraints" class="cal1"></div>
+
+      <p>
+        <strong>clndr.prevNextMonthConstraints</strong> Test start and end constraints.
+        (the 22nd of previous month to the 5th of next month).
+      </p>
+      <div id="prev-next-month-constraints" class="cal1"></div>
+
+      <p>
+          <strong>clndr.prevMonthConstraints</strong> Test start and end constraints.
+          (the 2nd to the 5th of previous month).
+      </p>
+      <div id="prev-month-constraints" class="cal1"></div>
+
+
+      <p>
+        <strong>clndr.startConstraint</strong> Test start constraint. (4th
+        of this month).
+      </p>
+      <div id="start-constraint" class="cal1"></div>
+
+      <p>
+        <strong>clndr.endConstraint</strong> Test end constraint. (12th of
+        next month).
+      </p>
+      <div id="end-constraint" class="cal1"></div>
+
+      <p>
+        <strong>clndr.sixRows</strong> Test the forceSixRows option, which
+        should make a six-row calendar regardless of the length of each
+        month.
+      </p>
+      <div id="six-rows" class="cal1"></div>
+
+      <p>
+        <strong>clndr.formatWeekdayHeader</strong> Should display full
+        weekday names in the header for each day.
+      </p>
+      <div id="format-weekday-header" class="cal1"></div>
+
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+    <script src="assets/js/clndr.js"></script>
+    <script src="assets/js/test.js"></script>
+</body>
+</html>

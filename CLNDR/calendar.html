@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calendar by using clndr.js</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/clndr.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="padding-bottom: 40px;">
+      <div id="clndr-calendar" class="cal1"></div>
+    </div>
+
+    <!-- input modal for single day event details  -->
+    <div class="modal fade" id="myModal"> 
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Adding Event</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Event details</label>
+                    <input type="text" class="form-control" id="eventDetails" aria-describedby="event" placeholder="Enter event details" value="">
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" id="add" class="btn btn-success" >Add</button>
+              <button type="button" id="close" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- input modal for multi day event details  -->
+    <div class="modal fade" id="Multi-days-event-modal"> 
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Adding Multi-days Event</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+              <div class="form-group">
+                  <label for="eventDetails1">Event details</label>
+                  <input type="text" class="form-control" id="eventDetails1" aria-describedby="event" placeholder="Enter event details" value="">
+                  <label for="start-date">Start Date</label>
+                  <input type="text" class="form-control" id="start-date" aria-describedby="event" placeholder="Enter Start Date" value="">
+                  <label for="end-date">End Date</label>
+                  <input type="text" class="form-control" id="end-date" aria-describedby="event" placeholder="End Date" value="">
+                  <small id="emailHelp" class="form-text text-muted">Date must be number</small>
+              </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" id="add1" class="btn btn-success" >Add</button>
+            <button type="button" id="close1" class="btn btn-danger" data-dismiss="modal" >Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+    <script src="assets/js/clndr.js"></script>
+    <script src="assets/js/test.js"></script>
+</body>
+</html>
